@@ -10,7 +10,7 @@ import type { KeyCombo } from '../../src/schemas/keyBindingSchema'
 import type { useWorkspaceStore } from '../../src/stores/workspaceStore'
 import { NodeBadgeMode } from '../../src/types/nodeSource'
 import { ComfyActionbar } from '../helpers/actionbar'
-import { ComfyTemplates } from '../helpers/templates'
+// import { ComfyTemplates } from '../helpers/templates'
 import { ComfyMouse } from './ComfyMouse'
 import { ComfyNodeSearchBox } from './components/ComfyNodeSearchBox'
 import { SettingDialog } from './components/SettingDialog'
@@ -137,7 +137,7 @@ export class ComfyPage {
   public readonly searchBox: ComfyNodeSearchBox
   public readonly menu: ComfyMenu
   public readonly actionbar: ComfyActionbar
-  public readonly templates: ComfyTemplates
+  // public readonly templates: ComfyTemplates
   public readonly settingDialog: SettingDialog
   public readonly confirmDialog: ConfirmDialog
 
@@ -162,7 +162,7 @@ export class ComfyPage {
     this.searchBox = new ComfyNodeSearchBox(page)
     this.menu = new ComfyMenu(page)
     this.actionbar = new ComfyActionbar(page)
-    this.templates = new ComfyTemplates(page)
+    // this.templates = new ComfyTemplates(page)
     this.settingDialog = new SettingDialog(page)
     this.confirmDialog = new ConfirmDialog(page)
   }
